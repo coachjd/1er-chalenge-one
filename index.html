@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+	<meta name="author" content="Nombre autor página web">
+	<meta name="description" content="Breve descripción de la página web">
+	<meta name="keywords" content="palabras clave separadas por coma">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Challenge Encriptador</title>
+    <!-- Vinculación con el CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Enlace a fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet"familia=Nunito:wght@200;600&> 
+    <!-- Vinculación Hoja de Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script>
+        function encriptarTexto()
+        {
+            var vocales= ["a","e","i","o","u"]
+            var letras = ["ai","enter","imes","ober","ufat"]
+            let texto =document.getElementById("inText").value
+            var newTexto = ""
+                        
+           
+            for (var i=0; i< texto.length; i++)
+            {
+                for (var l=0; l<5; l++)
+                {
+                    if (texto[i] == vocales[l])
+                    {
+                        
+
+
+                       /*  console.log("Hola "," ", i," ",l)
+                        console.log(texto[i])
+                        console.log(vocales[l])
+                        console.log(letras[l]) */
+                        
+                    }
+                }
+            }
+            newTexto = texto.replace("a","Jesus")
+
+            console.log(newTexto)
+        }
+
+
+
+
+
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo_alura.svg" alt="Logo Alura">
+        </nav>
+        
+
+    </header>
+    <h1>****TOP SECRET****</h1>
+    <section class="cuerpo">
+        
+        <textarea type="text" name="inText" id="inText" autofocus placeholder="Texto a codificar" required cols="50" rows="8"></textarea>    
+        
+        <textarea  name="outText" id="outText" cols="30" rows="8"></textarea>  
+        <br>
+        <input type="button" value="Enviar" onclick="encriptarTexto()">
+        <label for="nivel">Nivel de encriptación</label>
+        <br>
+        <input type="radio" name="nivelEncriptado" id="nE" value="Nivel1" checked > Básico
+        <input type="radio" name="nivelEncriptado" id="nE" value="Nivel2" > 007
+
+
+        
+        
+
+    </section> 
+
+    <div>
+        <button>Encriptar</button>
+        <button>Desencriptar</button>
+    </div>
+    
+    <main>
+
+    </main>
+    
+   
+</body>
+</html>

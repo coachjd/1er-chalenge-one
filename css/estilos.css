@@ -1,0 +1,38 @@
+body
+{
+    background:  #F3F5FC;
+    familia fuente: 'Nunito', sans-serif;
+}
+nav
+{
+    margin-top: 40px;
+}
+h1
+{
+    font-size:x-large;
+    text-align: center;
+    color: red;
+}
+textarea
+{
+    resize: none;
+    font-size: 30px;
+}
+.cuerpo
+{
+    display: inline;
+        
+}
+
+#inText
+{
+    
+    margin-left: 50px;
+}
+
+#outText
+{
+    margin-left: 50px;
+    width: 30%;
+    
+}
